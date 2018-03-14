@@ -2,19 +2,19 @@
 struct Student
 {
     char name[15];
-    char id[5];
+    char id[15];
     int score;
 }temp,ans_max,ans_min;
 
 int main()
 {
-    int n;
+    int n,i;
     scanf("%d",&n);
     ans_max.score=-1;
     ans_min.score=101;
-    for(int i = 0;i < n;i++)
+    for(i=0;i<n;i++)
     {
-        scanf("%s %s %d",temp.name,temp.id,&temp.score);
+        scanf("%s%s%d",temp.name,temp.id,&temp.score);
         if(temp.score>ans_max.score) ans_max=temp;
         if(temp.score<ans_min.score) ans_min=temp;
     }
